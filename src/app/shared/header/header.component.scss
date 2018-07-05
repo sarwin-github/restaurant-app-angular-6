@@ -65,12 +65,33 @@
         -o-transition: all 0.2s;
         transition: all 0.2s;
       }
+      &:active{
+        color: #e1f2c4;
+        text-decoration: underline;
+        -moz-transition: all 0.2s;
+        -webkit-transition: all 0.2s;
+        -o-transition: all 0.2s;
+        transition: all 0.2s;
+      }
     }
   }
 }
 
 .dropdown:hover>.dropdown-menu {
   display: block;
+}
+
+.dropdown-item{
+  border-bottom: solid 1px #e2e2e2;
+  padding: 20px !important;
+  padding-left: 30px !important;
+  padding-right: 30px !important;
+}
+
+.dropdown-item:active{
+  background: #88bc71;
+  color: white !important;
+  text-transform: underline;
 }
 
 .dropdown-menu{

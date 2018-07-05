@@ -8,6 +8,7 @@ import { HeaderCarouselComponent } from './header-carousel/header-carousel.compo
 import { AboutRestaurantComponent } from './about-restaurant/about-restaurant.component';
 import { FoodsComponent } from './foods/foods.component';
 import { FacilitiesComponent } from './facilities/facilities.component';
+import { MenuComponent } from '../menu/menu.component';
 
 const homeRoute: Routes = [
   	{ path: '', component: HomeComponent }
@@ -22,6 +23,7 @@ const homeRoute: Routes = [
   exports: [RouterModule],
   declarations: [
     HomeComponent,
+    MenuComponent,
     HeaderCarouselComponent,
     AboutRestaurantComponent,
     FoodsComponent,
