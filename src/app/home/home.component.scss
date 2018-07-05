@@ -1,0 +1,43 @@
+.btn-header{
+  position: absolute;
+  top: 81.5%;
+  right: 5%;
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.btn-header-arrow{
+  -moz-transform: rotate(-45deg) !important;
+  -webkit-transform: rotate(-45deg) !important;
+  -o-transform: rotate(-45deg) !important;
+  transform: rotate(-45deg) !important;
+  font-size: 18px !important;
+  padding-right: 14px;
+  z-index: -1;
+  padding-top: 5px;
+  cursor: pointer;
+}
+
+.btn-activity{
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+#icon-header, #icon-header2, #icon-header3{
+	font-size: 50px;
+}
+.menu{
+	background: green;
+}
+
+.btn-menu{
+  background: #88bc71;
+}

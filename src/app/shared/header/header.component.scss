@@ -1,0 +1,138 @@
+
+/* Define how each icon button should look like */
+.button {
+  color: white;
+  display: inline-block; /* Inline elements with width and height. TL;DR they make the icon buttons stack from left-to-right instead of top-to-bottom */
+  position: relative; /* All 'absolute'ly positioned elements are relative to this one */
+  padding: 2px 5px; /* Add some padding so it looks nice */
+  cursor: pointer;
+}
+
+/* Make the badge float in the top right corner of the button */
+.button__badge {
+  background-color: #fa3e3e;
+  border-radius: 15px;
+  color: white;
+ 
+  padding: 1px 5px;
+  font-size: 10px;
+  
+  position: absolute; /* Position the badge within the relatively positioned button */
+  top: 28px;
+  left: 15px;
+}
+
+.fixed-top-background{
+  background: rgba(98, 132, 80, 0.85) !important;
+
+}
+
+.fixed-top{    
+  @media screen and (max-width: 481px)  { 
+    background: rgba(98, 132, 80, 0.85) !important;
+    img{
+      width: 20% !important;
+    } 
+  }
+
+  @media screen and (max-width: 599px)  { 
+    background: rgba(98, 132, 80, 0.85) !important;
+    img{
+      width: 20% !important;
+    }
+  }
+
+  @media screen and (min-width: 600px)  { 
+    z-index: 99999;
+    -webkit-animation: fadein 0.5s; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation: fadein 0.5s; /* Firefox < 16 */
+      -ms-animation: fadein 0.5s; /* Internet Explorer */
+       -o-animation: fadein 0.5s; /* Opera < 12.1 */
+          animation: fadein 0.5s;
+  }
+}
+
+#first-navbar-top{
+  .nav-item{
+    .nav-link{
+      font-size: 18px !important;
+      color: whitesmoke;
+      &:hover{
+        color: #e1f2c4;
+        text-decoration: underline;
+        -moz-transition: all 0.2s;
+        -webkit-transition: all 0.2s;
+        -o-transition: all 0.2s;
+        transition: all 0.2s;
+      }
+    }
+  }
+}
+
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu{
+  background: rgba(240, 240, 240, 0.95);
+  .dropdown-item{
+    color: gray;
+  }
+}
+
+
+#second-navbar{
+  margin-top: 130px !important;
+
+  .nav-item{
+    .nav-link{
+      font-size: 13px !important;
+      color: gray;
+      font-weight: 600;
+    }
+    
+  }
+}
+
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.main-header{
+  font-family: Arial;
+  font-weight: 600;
+}
+
+
+.header-home{
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 50px;
+}
+

@@ -1,0 +1,123 @@
+<!---->
+<nav class="navbar navbar-expand-lg navbar-dark py-3 fixed-top" id="first-navbar-top" [ngClass]="!fixed ? '' : 'fixed-top fixed-top-background'">
+	<nav class="container">
+		<a class="navbar-brand text-u container-text" routerLink="/">
+			<img src="./assets/images/kamayanLogo.png" [ngClass]="!fixed ? 'w-50' : 'w-25'">
+		</a>
+
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-top" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbar-top">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item dropdown pt-2" data-toggle="collapse" data-target=".navbar-collapse.show">
+					<a class="nav-link" routerLink="/" id="HomeDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+			          Home
+			        </a>
+			        <div class="dropdown-menu" aria-labelledby="HomeDropdown">
+			          <a class="dropdown-item" href="#">Home</a>
+			           <div class="dropdown-divider"></div>
+			          <a class="dropdown-item" href="#">About</a>
+			        </div>
+				</li>
+
+				<li class="nav-item dropdown pt-2">
+					<a class="nav-link" routerLink="/" id="MenuPackage" role="button" data-toggle="dropdown" aria-expanded="false">
+			          Menu/Packages
+			        </a>
+			        <div class="dropdown-menu" aria-labelledby="MenuPackage">
+			          <a class="dropdown-item" href="#" data-toggle="collapse" data-target=".navbar-collapse.show">For All Occation</a>
+			          <a class="dropdown-item" href="#" data-toggle="collapse" data-target=".navbar-collapse.show">Pre Order Basis</a>
+			          <div class="dropdown-divider"></div>
+			          <a class="dropdown-item" href="#" data-toggle="collapse" data-target=".navbar-collapse.show">Native Style Wedding</a>
+			          <a class="dropdown-item" href="#" data-toggle="collapse" data-target=".navbar-collapse.show">Nature Crest Wedding</a>
+			        </div>
+				</li>
+
+				<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+					<a class="nav-link pt-3" routerLink="/"> Hotel/Rooms 
+
+					</a>
+				</li>
+
+				<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+					<a class="nav-link pt-3" href="#"> Facilities/Restaurant 
+
+					</a>
+				</li>
+			</ul>
+
+			
+		</div>
+
+	</nav>
+</nav>
+
+<!--
+<nav class="navbar navbar-expand-lg navbar-dark py-3 fixed-top" id="small-navbar-top">
+	<nav class="container">
+		<a class="navbar-brand text-u container-text" routerLink="/">
+			<img src="./assets/images/kamayanLogo.png" class="w-50">
+		</a>
+
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-top" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbar-top">
+			<ul class="navbar-nav ml-auto">
+
+
+				<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+					<a class="nav-link pt-3" routerLink="/"> Home 
+
+					</a>
+				</li>
+
+				<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+					<a class="nav-link pt-3" routerLink="/"> Menu/Packages 
+
+					</a>
+				</li>
+
+				<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+					<a class="nav-link pt-3" routerLink="/"> Hotel/Rooms 
+
+					</a>
+				</li>
+
+				<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+					<a class="nav-link pt-3" href="#"> Facilities/Restaurant 
+
+					</a>
+				</li>
+			</ul>
+
+			
+		</div>
+
+	</nav>
+</nav>-->
+<!--
+<nav class="navbar navbar-expand-lg navbar-dark bg-light" id="second-navbar">
+	<nav class="container">
+
+		<div class="collapse navbar-collapse" id="navbar-top">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+					<a class="nav-link pt-3" routerLink="/"> CALL US NOW (042) 793-3654 
+
+					</a>
+				</li>
+
+				<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+					<a class="nav-link pt-3" routerLink="/">Tayabas City, Philippines 
+
+					</a>
+				</li>
+			</ul>
+		</div>
+
+	</nav>
+</nav>-->

@@ -1,0 +1,122 @@
+
+.container-text {
+  	position: relative;
+  	text-align: center;
+  	color: white;
+  	z-index: 99999 !important;
+}
+
+.header-home{
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 70px;
+  color: #f4fccf;
+}
+
+.header-home-details{
+	color: #ffffff;
+}
+
+.carousel-height{
+	@media only screen and (min-width : 992px) {
+		overflow: hidden !important;
+		height: 650px !important;
+	}
+
+	a{
+		padding-top: 100px;
+	}
+}
+
+.carousel-img{
+	@media only screen and (min-width : 992px) {
+		overflow: hidden !important;
+		height: 650px !important;
+	}
+
+	&:before {
+		content: "";
+		position: absolute;
+		left: 0; 
+		right: 0;
+		top: 0; 
+		bottom: 0;
+		background: rgba(112, 102, 77,0.3);
+
+	}
+}
+
+#carousel-img-1{
+	background: url(/assets/images/palaisdaan2.jpg)no-repeat center center; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+	&:before {
+		content: "";
+		position: absolute;
+		left: 0; 
+		right: 0;
+		top: 0; 
+		bottom: 0;
+		background: rgba(112, 102, 77,0.7);
+
+	}
+}
+
+#carousel-img-2{
+	background: url(/assets/images/palaisdaan.jpg)no-repeat center center; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+	&:before {
+		content: "";
+		position: absolute;
+		left: 0; 
+		right: 0;
+		top: 0; 
+		bottom: 0;
+		background: rgba(112, 102, 77,0.7);
+
+	}
+}
+
+#carousel-img-3{
+	background: url(/assets/images/palaisdaan3.jpg)no-repeat center center; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+	&:before {
+		content: "";
+		position: absolute;
+		left: 0; 
+		right: 0;
+		top: 0; 
+		bottom: 0;
+		background: rgba(112, 102, 77,0.7);
+
+	}
+}
+
+.container-text-position{
+  	position: relative;
+
+	@media screen and (max-width: 481px)  { 
+	  top: 50% !important; 
+	}
+
+	@media screen and (max-width: 599px)  { 
+	  top: 50% !important;
+	}
+
+	@media (min-width:600px) {
+		top: 30%;
+		left: 0;
+		transform: translateY(-20%); 
+	}
+}
