@@ -52,29 +52,42 @@
   }
 }
 
-#first-navbar-top{
-  .nav-item{
-    .nav-link{
-      font-size: 18px !important;
-      color: whitesmoke;
-      &:hover{
-        color: #e1f2c4;
-        text-decoration: underline;
-        -moz-transition: all 0.2s;
-        -webkit-transition: all 0.2s;
-        -o-transition: all 0.2s;
-        transition: all 0.2s;
-      }
-      &:active{
-        color: #e1f2c4;
-        text-decoration: underline;
-        -moz-transition: all 0.2s;
-        -webkit-transition: all 0.2s;
-        -o-transition: all 0.2s;
-        transition: all 0.2s;
-      }
+
+
+.nav-item{
+  .nav-link{
+    font-size: 18px !important;
+    color: whitesmoke;
+
+    &:hover{
+      color: #e1f2c4;
+      text-decoration: underline;
+      -moz-transition: all 0.2s;
+      -webkit-transition: all 0.2s;
+      -o-transition: all 0.2s;
+      transition: all 0.2s;
+    }
+
+    &:active{
+      color: #e1f2c4 !important;
+      text-decoration: underline  !important;
+      -moz-transition: all 0.2s;
+      -webkit-transition: all 0.2s;
+      -o-transition: all 0.2s;
+      transition: all 0.2s;
     }
   }
+
+  a.active{
+    color: #e1f2c4 !important;
+    text-decoration: underline  !important;
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+  }
+
+
 }
 
 .dropdown:hover>.dropdown-menu {

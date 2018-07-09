@@ -3,13 +3,13 @@
 <!-- Header carousel -->
 <header-carousel id="home"></header-carousel>
 
-<a href="#weather-section" class="btn btn-menu text-white btn-activity btn-header d-none d-sm-none d-md-block">
+<button type="button" (click)="goToMenu()" class="btn btn-menu text-white btn-activity btn-header d-none d-sm-none d-md-block">
   <span class="fa fa-chevron-circle-down btn-header-arrow"></span>
-</a>
+</button>
 
 
 <!-- About  -->
-<about-restaurant></about-restaurant>
+<about-restaurant id="about-restaurant"></about-restaurant>
 
 <!-- Foods -->
 <home-foods></home-foods>

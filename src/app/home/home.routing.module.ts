@@ -8,13 +8,29 @@ import { HeaderCarouselComponent } from './header-carousel/header-carousel.compo
 import { AboutRestaurantComponent } from './about-restaurant/about-restaurant.component';
 import { FoodsComponent } from './foods/foods.component';
 import { FacilitiesComponent } from './facilities/facilities.component';
-import { MenuComponent } from '../menu/menu.component';
 import { SearchPipe } from '../pipes/search-pipes';
+
+// Menu
 import { MainMenuComponent } from '../menu/main-menu/main-menu.component';
+import { MenuPackageAllOccationsComponent as MenuPackageAll } from '../menu/menu-package-all-occations/menu-package-all-occations.component';
+import { MenuCarouselComponent } from '../menu/menu-carousel/menu-carousel.component';
+import { MenuPreorderBasisComponent as MenuPreOrder } from '../menu/menu-preorder-basis/menu-preorder-basis.component';
+import { MenuNativeStyleWeddingComponent as MenuNativeWed } from '../menu/menu-native-style-wedding/menu-native-style-wedding.component';
+import { MenuNatureCrestWeddingComponent as MenuNatureCrestWed} from '../menu/menu-nature-crest-wedding/menu-nature-crest-wedding.component';
+import { MenuKiddiePartyComponent as MenuKiddieParty } from '../menu/menu-kiddie-party/menu-kiddie-party.component';
 
 const homeRoute: Routes = [
   	{ path: '', component: HomeComponent },
-    { path: 'menu', component: MenuComponent }
+    { path: 'menu', 
+      children: [
+        { path: '', component: MainMenuComponent },
+        { path: 'all-occations', component: MenuPackageAll },
+        { path: 'per-order-basis', component: MenuPreOrder },
+        { path: 'native-style-wedding', component: MenuNativeWed },
+        { path: 'nature-crest-wedding', component: MenuNatureCrestWed },
+        { path: 'kiddie-party', component: MenuKiddieParty },
+      ] 
+    }
 ];
 
 @NgModule({
@@ -26,8 +42,13 @@ const homeRoute: Routes = [
   exports: [RouterModule],
   declarations: [
     HomeComponent,
-    MenuComponent,
     MainMenuComponent,
+    MenuPackageAll,
+    MenuCarouselComponent,
+    MenuPreOrder,
+    MenuNativeWed,
+    MenuNatureCrestWed,
+    MenuKiddieParty,
     HeaderCarouselComponent,
     AboutRestaurantComponent,
     FoodsComponent,
