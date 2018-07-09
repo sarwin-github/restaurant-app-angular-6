@@ -1,15 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-hotel-renthouse',
-  templateUrl: './hotel-renthouse.component.html',
-  styleUrls: ['./hotel-renthouse.component.scss']
+	selector: 'app-hotel-renthouse',
+	templateUrl: './hotel-renthouse.component.html',
+	styleUrls: ['./hotel-renthouse.component.scss']
 })
 export class HotelRenthouseComponent implements OnInit {
 
-  constructor() { }
+	constructor() { }
 
-  ngOnInit() {
-  }
+	ngOnInit() {
+		let div = document.getElementById('hotel-renthouse').offsetTop;
+		window.scrollTo({ left: 0, top: div - 99, behavior: 'smooth' });
+	}
 
 }

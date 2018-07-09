@@ -10,6 +10,8 @@ export class HotelVillaComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  	let div = document.getElementById('hotel-villa').offsetTop;
+  	window.scrollTo({ left: 0, top: div - 100, behavior: 'smooth' });
   }
 
 }

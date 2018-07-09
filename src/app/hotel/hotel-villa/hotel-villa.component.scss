@@ -2,6 +2,49 @@
 	z-index: 99999;
 }
 
+@media (min-width: 720px) {
+  .modal-dialog {
+    max-width: 70%;
+  }
+}
+
 .carousel-caption{
 	background: rgba(0,0,0, 0.5) !important;
+}
+
+#villaCarousel {
+  margin: 20px auto;
+}
+#villaCarousel .carousel-indicators {
+  margin: 10px 0 0;
+
+  position: static;
+  text-align: left;
+  white-space: nowrap;
+  width: 100%;
+}
+#villaCarousel .carousel-indicators li {
+  background-color: transparent;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  display: inline-block;
+  height: auto;
+  margin: 1 !important;
+  width: auto;
+}
+#villaCarousel .carousel-indicators li > img {
+  display: block;
+  max-height: 30px;
+  height: 30px;
+  overflow-y: hidden !important;
+  margin: 2px;
+  opacity: 0.6;
+}
+
+#villaCarousel .carousel-indicators li > img:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+#villaCarousel .carousel-outer {
+  position: relative;
 }
