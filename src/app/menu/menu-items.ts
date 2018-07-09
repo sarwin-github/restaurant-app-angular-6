@@ -1,4 +1,4 @@
-{
+const menuItems = {
 	"type": "Restaurant Menu",
 	"restaurant-info": {
 		"location": "Tayabas City",
@@ -578,3 +578,4 @@
 	}
 }
 
+export default menuItems;

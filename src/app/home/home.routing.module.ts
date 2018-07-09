@@ -9,9 +9,13 @@ import { AboutRestaurantComponent } from './about-restaurant/about-restaurant.co
 import { FoodsComponent } from './foods/foods.component';
 import { FacilitiesComponent } from './facilities/facilities.component';
 import { MenuComponent } from '../menu/menu.component';
+import { SearchPipe } from '../pipes/search-pipes';
+import { MainMenuComponent } from '../menu/main-menu/main-menu.component';
+import { PackagesAllComponent as MenuPackageAll } from '../menu/packages-all/packages-all.component';
 
 const homeRoute: Routes = [
-  	{ path: '', component: HomeComponent }
+  	{ path: '', component: HomeComponent },
+    { path: 'menu', component: MenuComponent }
 ];
 
 @NgModule({
@@ -24,10 +28,13 @@ const homeRoute: Routes = [
   declarations: [
     HomeComponent,
     MenuComponent,
+    MainMenuComponent,
+    MenuPackageAll,
     HeaderCarouselComponent,
     AboutRestaurantComponent,
     FoodsComponent,
-    FacilitiesComponent
+    FacilitiesComponent,
+    SearchPipe
   ],
   providers: []
 })

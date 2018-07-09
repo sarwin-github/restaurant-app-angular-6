@@ -12,34 +12,34 @@
 		<div class="collapse navbar-collapse" id="navbar-top">
 			<ul class="navbar-nav ml-auto">
 				<li class="nav-item dropdown pt-2">
-					<a class="nav-link" routerLink="/" id="HomeDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+					<a class="nav-link" routerLink="/" id="HomeDropdown" role="button" data-toggle="dropdown">
 			          Home
 			        </a>
-			        <div class="dropdown-menu" aria-labelledby="HomeDropdown">
-			          	<a class="dropdown-item" href="#">
+			        <div class="dropdown-menu" aria-labelledby="HomeDropdown" [routerLink]="['']" fragment="/">
+			          	<a class="dropdown-item" href="#home" data-toggle="collapse" data-target=".navbar-collapse.show">
 			          	<span class="fa fa-angle-right mr-3"></span>Home</a>
 
-			          	<a class="dropdown-item" href="#">
+			          	<a class="dropdown-item" href="#about-kamayan" data-toggle="collapse" data-target=".navbar-collapse.show">
 			          	<span class="fa fa-angle-right mr-3"></span>About</a>
 
-			          	<a class="dropdown-item" href="#">
+			          	<a class="dropdown-item" href="#food-variety" data-toggle="collapse" data-target=".navbar-collapse.show">
 			          	<span class="fa fa-angle-right mr-3"></span>Variety of Foods</a>
 
-			          	<a class="dropdown-item" href="#">
+			          	<a class="dropdown-item" href="#home-facilities" data-toggle="collapse" data-target=".navbar-collapse.show">
 			          	<span class="fa fa-angle-right mr-3"></span>Facilities</a>
 
-			          	<a class="dropdown-item" href="#">
+			          	<a class="dropdown-item" href="#map-data" data-toggle="collapse" data-target=".navbar-collapse.show">
 			          	<span class="fa fa-angle-right mr-3"></span>Map</a>
 
 			          	<div class="dropdown-divider"></div>
 			        </div>
 				</li>
 
-				<li class="nav-item dropdown pt-2">
-					<a class="nav-link" routerLink="/" id="MenuPackage" role="button" data-toggle="dropdown" aria-expanded="false">
+				<li class="nav-item dropdown pt-2" >
+					<a class="nav-link" routerLink="/menu" id="MenuPackage" role="button" data-toggle="dropdown" aria-expanded="false">
 			          Menu/Packages
 			        </a>
-			        <div class="dropdown-menu" aria-labelledby="MenuPackage">
+			        <div class="dropdown-menu" aria-labelledby="MenuPackage" [routerLink]="['/menu']" fragment="/">
 			          	<a class="dropdown-item" href="#" data-toggle="collapse" data-target=".navbar-collapse.show">
 			          	<span class="fa fa-angle-right mr-3"></span>For All Occation</a>
 
