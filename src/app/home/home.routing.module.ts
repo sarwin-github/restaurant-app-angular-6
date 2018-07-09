@@ -22,7 +22,11 @@ import { MenuKiddiePartyComponent as MenuKiddieParty } from '../menu/menu-kiddie
 // Hotel
 import { HotelsMainComponent } from '../hotel/hotels-main/hotels-main.component';
 import { HotelCarouselComponent } from '../hotel/hotel-carousel/hotel-carousel.component';
-
+import { HotelRenthouseComponent } from '../hotel/hotel-renthouse/hotel-renthouse.component';
+import { HotelVillaComponent } from '../hotel/hotel-villa/hotel-villa.component';
+import { HotelDormitoryComponent } from '../hotel/hotel-dormitory/hotel-dormitory.component';
+import { HotelStandardComponent } from '../hotel/hotel-standard/hotel-standard.component';
+import { HotelDeluxeComponent } from '../hotel/hotel-deluxe/hotel-deluxe.component';
 
 const homeRoute: Routes = [
   	{ path: '', component: HomeComponent },
@@ -38,7 +42,9 @@ const homeRoute: Routes = [
     },
     { path: 'hotels', 
       children: [
-        { path: '', component: HotelsMainComponent }
+        { path: '', component: HotelsMainComponent },
+        { path: 'rent-house', component: HotelRenthouseComponent },
+        { path: 'villa-rooms', component: HotelVillaComponent }
       ] 
     }
 ];
@@ -61,6 +67,11 @@ const homeRoute: Routes = [
     MenuKiddieParty,
     HotelsMainComponent,
     HotelCarouselComponent,
+    HotelRenthouseComponent,
+    HotelVillaComponent,
+    HotelDormitoryComponent,
+    HotelStandardComponent,
+    HotelDeluxeComponent,
     HeaderCarouselComponent,
     AboutRestaurantComponent,
     FoodsComponent,
