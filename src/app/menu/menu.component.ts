@@ -8,11 +8,15 @@ import { fadeIn } from '../animations/fadeIn';
 	styleUrls: ['./menu.component.scss']
 })
 export class MenuComponent implements OnInit {
+	lat: number = 14.0616;
+    lng: number = 121.5721;
+
 	constructor() { }
 
 	ngOnInit() {
-		const div = document.getElementById('main-menu').offsetTop;
-		window.scrollTo({ left: 0, top: div - 100, behavior: 'smooth' });
+		let div = document.getElementById('main-menu').offsetTop;
+		div = !!div ? div - 100 : 0;
+		window.scrollTo({ left: 0, top: div, behavior: 'smooth' });
 	}
 	
 	ngOnDestroy(){

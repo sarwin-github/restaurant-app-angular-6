@@ -11,7 +11,6 @@ import { FacilitiesComponent } from './facilities/facilities.component';
 import { MenuComponent } from '../menu/menu.component';
 import { SearchPipe } from '../pipes/search-pipes';
 import { MainMenuComponent } from '../menu/main-menu/main-menu.component';
-import { PackagesAllComponent as MenuPackageAll } from '../menu/packages-all/packages-all.component';
 
 const homeRoute: Routes = [
   	{ path: '', component: HomeComponent },
@@ -29,7 +28,6 @@ const homeRoute: Routes = [
     HomeComponent,
     MenuComponent,
     MainMenuComponent,
-    MenuPackageAll,
     HeaderCarouselComponent,
     AboutRestaurantComponent,
     FoodsComponent,

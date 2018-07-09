@@ -1,4 +1,5 @@
 import { Component, OnInit, HostListener } from '@angular/core';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'header-navigation',
@@ -7,7 +8,7 @@ import { Component, OnInit, HostListener } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 	fixed: boolean = false;
-  	constructor() { }
+  	constructor(private router: Router) { }
 
   	ngOnInit() {
  	}

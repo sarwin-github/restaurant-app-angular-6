@@ -2,3 +2,13 @@
 <header-carousel></header-carousel>
 
 <main-menu [@fadeIn]></main-menu>
+
+<div class="container-fluid" id="map-data">
+	<div class="row">
+		<div class="col-md-12 col-lg-12  px-0">
+			<agm-map [latitude]="lat" [longitude]="lng" [fullscreenControl]='true' [mapTypeControl]='true' [zoom]="12">
+				<agm-marker [latitude]="lat" [longitude]="lng" [markerDraggable]="true"></agm-marker>
+			</agm-map>
+		</div>
+	</div>
+</div>
