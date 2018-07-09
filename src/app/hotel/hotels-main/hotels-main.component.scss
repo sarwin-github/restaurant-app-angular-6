@@ -1,0 +1,115 @@
+.capacity-standard{
+	border-style: none none solid solid; 
+	border-bottom-width: 1px; 
+	border-bottom-color: #000000; 
+	border-left-width: 1px; 
+	border-left-color: #000000; 
+	padding: 0cm 0cm 0.1cm 0.1cm; 
+	width: 12%;
+}
+
+.capacity-standard-max{
+	border-style: none none solid solid; 
+	border-bottom-width: 1px; 
+	border-bottom-color: #000000; 
+	border-left-width: 1px; 
+	border-left-color: #000000; 
+	padding: 0cm 0cm 0.1cm 0.1cm; 
+	width: 11%;
+}
+
+.room-type{
+	border-style: none none solid solid; 
+	border-bottom-width: 1px; 
+	border-bottom-color: #000000; 
+	border-left-width: 1px; 
+	border-left-color: #000000; 
+	padding: 0cm 0cm 0.1cm 0.1cm; 
+	width: 21%;
+}
+
+.weekday-season-rate{
+	border-style: none none solid solid; 
+	border-bottom-width: 1px; 
+	border-bottom-color: #000000; 
+	border-left-width: 1px; 
+	border-left-color: #000000; 
+	padding: 0cm 0cm 0.1cm 0.1cm; 
+	width: 14.053935669456067%;
+}
+
+.weekday-season-rate-peak{
+	border-style: none none solid solid; 
+	border-bottom-width: 1px; 
+	border-bottom-color: #000000; 
+	border-left-width: 1px; 
+	border-left-color: #000000; 
+	padding: 0cm 0cm 0.1cm 0.1cm; 
+	width: 14%;
+}
+
+.weekend-season-rate{
+	border-style: none none solid solid; 
+	border-bottom-width: 1px; 
+	border-bottom-color: #000000; 
+	border-left-width: 1px; 
+	border-left-color: #000000; 
+	padding: 0cm 0cm 0.1cm 0.1cm; 
+	width: 13.946064330543933%;
+}
+
+.weekend-season-rate-peak{
+	border-style: none solid solid; 
+	border-bottom-width: 1px; 
+	border-bottom-color: #000000; 
+	border-left-width: 1px; 
+	border-left-color: #000000; 
+	border-right-width: 1px; 
+	border-right-color: #000000; 
+	padding: 0cm 0.1cm 0.1cm; 
+	width: 15%;
+}
+
+.room-col-style{
+	border-top-width: 1px; 
+	border-style: solid none solid solid; 
+	border-top-color: #000000; 
+	border-bottom-width: 1px; 
+	border-bottom-color: #000000; 
+	border-left-width: 1px; 
+	border-left-color: #000000; 
+	padding: 0.1cm 0cm 0.1cm 0.1cm; 
+	width: 21%;
+}
+
+.capacity-col-style{
+	border-top-width: 1px; 
+	border-style: solid none solid solid; 
+	border-top-color: #000000; 
+	border-bottom-width: 1px; 
+	border-bottom-color: #000000; 
+	border-left-width: 1px; 
+	border-left-color: #000000; 
+	padding: 0.1cm 0cm 0.1cm 0.1cm; 
+	width: 23%;
+}
+
+.season-rate-style{
+	border-top-width: 1px; 
+	border-style: solid none solid solid; 
+	border-top-color: #000000; 
+	border-bottom-width: 1px; 
+	border-bottom-color: #000000; 
+	border-left-width: 1px; 
+	border-left-color: #000000; 
+	padding: 0.1cm 0cm 0.1cm 0.1cm; 
+	width: 28%;
+}
+
+tr{
+	td{
+		p{	
+			font-size: 11pt;
+		}
+	}
+}

@@ -19,6 +19,11 @@ import { MenuNativeStyleWeddingComponent as MenuNativeWed } from '../menu/menu-n
 import { MenuNatureCrestWeddingComponent as MenuNatureCrestWed} from '../menu/menu-nature-crest-wedding/menu-nature-crest-wedding.component';
 import { MenuKiddiePartyComponent as MenuKiddieParty } from '../menu/menu-kiddie-party/menu-kiddie-party.component';
 
+// Hotel
+import { HotelsMainComponent } from '../hotel/hotels-main/hotels-main.component';
+import { HotelCarouselComponent } from '../hotel/hotel-carousel/hotel-carousel.component';
+
+
 const homeRoute: Routes = [
   	{ path: '', component: HomeComponent },
     { path: 'menu', 
@@ -29,6 +34,11 @@ const homeRoute: Routes = [
         { path: 'native-style-wedding', component: MenuNativeWed },
         { path: 'nature-crest-wedding', component: MenuNatureCrestWed },
         { path: 'kiddie-party', component: MenuKiddieParty },
+      ] 
+    },
+    { path: 'hotels', 
+      children: [
+        { path: '', component: HotelsMainComponent }
       ] 
     }
 ];
@@ -49,6 +59,8 @@ const homeRoute: Routes = [
     MenuNativeWed,
     MenuNatureCrestWed,
     MenuKiddieParty,
+    HotelsMainComponent,
+    HotelCarouselComponent,
     HeaderCarouselComponent,
     AboutRestaurantComponent,
     FoodsComponent,
