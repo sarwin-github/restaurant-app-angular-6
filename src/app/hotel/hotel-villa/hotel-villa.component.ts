@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { fadeIn } from '../../animations/fadeIn';
 
 @Component({
   selector: 'app-hotel-villa',
+  animations: [fadeIn],
   templateUrl: './hotel-villa.component.html',
   styleUrls: ['./hotel-villa.component.scss']
 })

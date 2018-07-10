@@ -43,8 +43,11 @@ const homeRoute: Routes = [
     { path: 'hotels', 
       children: [
         { path: '', component: HotelsMainComponent },
-        { path: 'rent-house', component: HotelRenthouseComponent },
-        { path: 'villa-rooms', component: HotelVillaComponent }
+        { path: 'rest-house', component: HotelRenthouseComponent },
+        { path: 'villa-rooms', component: HotelVillaComponent },
+        { path: 'dormitory', component: HotelDormitoryComponent },
+        { path: 'standard', component: HotelStandardComponent },
+        { path: 'deluxe', component: HotelDeluxeComponent },
       ] 
     }
 ];

@@ -1,0 +1,87 @@
+.item {
+  position: relative;
+  border: 1px solid #e2e2e2;
+  overflow: hidden;
+
+  img{
+    max-width: 100%;
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+  }
+
+  &:hover img {
+    cursor: pointer;
+    -moz-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    z-index: 0;
+    position: relative;
+  }
+
+  
+
+  &:before{
+    content: "";
+      color: white;
+      position: absolute;
+      left: 0; 
+      right: 0;
+      top: 0; 
+      bottom: 0;
+      background: rgba(0,0,0, 0.2);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e67229', endColorstr='#fff0de', GradientType=1 );
+    
+  }
+}
+
+.thumbnail {
+  position: relative;
+  height: 150px;
+  overflow: hidden;
+  background-color: whitesmoke;
+
+  img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 100%;
+    width: auto;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+
+    &:hover{
+      cursor: pointer;
+      -moz-transform: scale(2);
+      -webkit-transform: scale(2);
+      transform: scale(2);
+      z-index: 0;
+      top: 0;
+      left: 20%;
+      right: 20%;
+      bottom: 0
+    }
+
+    &:before{
+      content: "";
+        color: white;
+        position: absolute;
+        left: 0; 
+        right: 0;
+        top: 0; 
+        bottom: 0;
+        background: rgba(0,0,0, 0.2);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e67229', endColorstr='#fff0de', GradientType=1 );
+      
+    }
+  }
+
+  img.portrait {
+    width: 100%;
+    height: auto;
+  }
+}
