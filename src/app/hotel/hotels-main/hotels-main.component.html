@@ -1,6 +1,10 @@
 <hotel-carousel></hotel-carousel>
 
-<div class="container">
+<button type="button" (click)="goToMenu()" class="btn btn-menu text-white btn-activity btn-header d-none d-sm-none d-md-block">
+  <span class="fa fa-chevron-circle-down btn-header-arrow"></span>
+</button>
+
+<div class="container" id="hotel-main">
 	<div class="row">
 		<div class="col-md-12 col-lg-12 text-center py-5" [@fadeIn]>
 			<h1>Hotel/Room Rates</h1><br>

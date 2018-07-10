@@ -33,7 +33,7 @@ export class HomeComponent implements OnInit {
 
     goToMenu(): void{
       let div = document.getElementById('about-restaurant').offsetTop;
-      window.scrollTo({ left: 0, top: div - 65, behavior: 'smooth' });
+      window.scrollTo({ left: 0, top: div - 100, behavior: 'smooth' });
     }
 
 }

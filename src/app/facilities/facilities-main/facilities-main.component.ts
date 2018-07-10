@@ -12,8 +12,12 @@ export class FacilitiesMainComponent implements OnInit {
 	constructor() { }
 
 	ngOnInit() {
-		let div = document.getElementById('facilities').offsetTop;
-		window.scrollTo({ left: 0, top: div - 100, behavior: 'smooth' });
+		window.scrollTo({ left: 0, top: 0, behavior: 'smooth' });
 	}
+
+	goToMenu(): void{
+      	let div = document.getElementById('facilities').offsetTop;
+		window.scrollTo({ left: 0, top: div - 100, behavior: 'smooth' });
+    }
 
 }

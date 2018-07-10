@@ -1,5 +1,9 @@
 <hotel-carousel></hotel-carousel>
 
+<button type="button" (click)="goToMenu()" class="btn btn-menu text-white btn-activity btn-header d-none d-sm-none d-md-block">
+  <span class="fa fa-chevron-circle-down btn-header-arrow"></span>
+</button>
+
 <div class="container" id="facilities">
 	<div class="row">
 		<div class="col-md-12 col-lg-12 text-center py-5 px-md-5" [@fadeIn]>
@@ -56,6 +60,24 @@
 				</div>
 			</div>
 
+			<!-- Zipline -->
+			<div class="col-md-12 text-center"><br>
+				<div class="card-hover-shadow">
+					<div class="d-none d-sm-block d-block d-md-none pl-0 d-lg-none">
+						<img src="/assets/images/zip.jpg" class="img img-fluid shadow-sm" style="width: 100%; border: 2px solid #e2e2e2;">
+					</div>
+					<div class="media card-block">
+						<img src="/assets/images/zip.jpg" class="img img-fluid shadow-sm m-2 mt-md-4 d-none d-md-block d-lg-block" style="width: 30%; border: 2px solid #e2e2e2;">
+						<div class="media-body text-left pl-md-5 pt-md-4">
+							<h3 class="card-title" style="margin-top: 20px; margin-bottom: 0;">Zip-line 
+							</h3>
+							<hr>
+							<p class="px-3">A Zip line is, at its most simple, a cable that starts at a higher point than it ends. Using the natural decline of the slope, a person or cargo can travel down the wire on a pulley system that minimizes friction to help the rider accelerate. Try out our Zip-line now.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
 			<div class="col-md-12 text-center"><br>
 				<div class="card-hover-shadow">
 					<div class="d-none d-sm-block d-block d-md-none pl-0 d-lg-none">
@@ -71,57 +93,7 @@
 							
 						</div>
 					</div>
-				</div>
-			</div>
-
-			<!-- Best Seller -->
-			<div class="col-md-12 text-center"><br>
-				<div class="card-hover-shadow">
-					<div class="d-none d-sm-block d-block d-md-none pl-0 d-lg-none">
-						<img src="/assets/images/foods.jpg" class="img img-fluid shadow-sm" style="width: 100%; border: 2px solid #e2e2e2;">
-					</div>
-
-					<div class="media card-block">
-						<div class="media-body text-left pl-md-5 pt-md-4">
-							<h3 class="card-title" style="margin-top: 20px; margin-bottom: 0;">Best Seller</h3>
-							<hr>
-							<p class="px-3">The menu consists mostly of fish, since Tayabas is known for their light and delectable seafood compared to Lucban's meat fest. Big winners are the Inihaw na Pla-Pla (also known as tilapia), and the inihaw na Hito.</p>
-							
-							<div class="row">
-								<div class="col-md-6 py-3"><h4 class="menu-style">GINATAANG SUSO WITH PAKO</h4>
-									Ginataang suso (snail with coconut milk) is an exotic dish yet one of the best sellers of Kamayan sa Palaisdaan that you will find surprisingly delicious. Snails cooked in coconut milk with fern that you will enjoy the richness flavor together.
-								</div>
-
-								<div class="col-md-6 py-3"><h4 class="menu-style">SINUGNO</h4>
-									Sinugno is a healthy and flavorful Filipino fish dish. The grilled tilapia gives a smoky flavor that balances out the creaminess of the coconut milk with Mustard leaves (mustasa leaves)
-								</div>
-
-								<div class="col-md-6 py-3"><h4 class="menu-style">SIZZLING SALPICAO</h4>
-									Beef Salpicao is a dish composed of cubed beef sirloin or tenderloin, seafood, red and green bell pepper, Worcestershire sauce, olive oil, and some liquid seasoning.
-								</div>
-
-								<div class="col-md-6 py-3"><h4 class="menu-style">SINIGANG NA SUGPO</h4>
-									Sinigang na Hipon is a Filipino sour soup dish, with shrimp as the main ingredient and vegetables in boiling water.
-								</div>
-
-
-
-								<div class="col-md-6 py-3"><h4 class="menu-style">INIHAW NA PORKCHOP</h4>
-									Inihaw na Pork Chop is translated in Filipino as grilled pork chop. Perfectly sliced pork chops with skin and fat on are marinated in soy sauce and lemon juice mixture along with some spices to achieve a delicious flavor that appeals to the Filipino taste buds.
-								</div>
-
-								<div class="col-md-6 py-3"><h4 class="menu-style">BINALOT NA SEAFOODS</h4>
-									Different kinds of seafood (Squid, Crab, Tilapia, and Shrimp) wrapped in banana leaves. 
-
-									<br> <br>
-
-									<h4 class="menu-style">ENSELADANG PAKO</h4>
-									Native Filipino Salad with main ingredient of freshly picked fern serve with tomatoes and salted egg.
-								</div>
-							</div>
-						</div>
-					</div><hr>
-				</div>
+				</div><hr>
 			</div>
 		</div>
 	</div>

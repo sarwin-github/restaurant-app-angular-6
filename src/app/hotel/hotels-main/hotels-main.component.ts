@@ -15,4 +15,9 @@ export class HotelsMainComponent implements OnInit {
 		window.scrollTo({ left: 0, top: 0, behavior: 'smooth' });
 	}
 
+	goToMenu(): void{
+      	let div = document.getElementById('hotel-main').offsetTop;
+		window.scrollTo({ left: 0, top: div - 100, behavior: 'smooth' });
+    }
+
 }
