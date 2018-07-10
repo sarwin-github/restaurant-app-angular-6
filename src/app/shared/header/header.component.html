@@ -92,10 +92,22 @@
 			        </div>
 				</li>
 
-				<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-					<a class="nav-link pt-3" href="#"> Facilities
+				<li class="nav-item dropdown pt-2">
+					<a class="nav-link" [routerLinkActive]="['active']" routerLink="/facilities" id="HotelRooms" role="button" data-toggle="dropdown" aria-expanded="false">
+			          Facilities 
+			        </a>
+			        <div class="dropdown-menu" aria-labelledby="HotelRooms" data-toggle="collapse" data-target=".navbar-collapse.show">
+			        	<a class="dropdown-item" routerLink="/hotels" >
+			        	<span class="fa fa-angle-right mr-3"></span>Swimming Pools</a>
 
-					</a>
+			          	<a class="dropdown-item" routerLink="/hotels/rest-house">
+			          	<span class="fa fa-angle-right mr-3"></span>Summit Cafe & Conference Room</a>
+
+			          	<a class="dropdown-item" routerLink="/hotels/villa-rooms">
+			          	<span class="fa fa-angle-right mr-3"></span>Amenities</a>
+			          	
+			          	<div class="dropdown-divider"></div>
+			        </div>
 				</li>
 
 				<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">

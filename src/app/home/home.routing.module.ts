@@ -28,6 +28,9 @@ import { HotelDormitoryComponent } from '../hotel/hotel-dormitory/hotel-dormitor
 import { HotelStandardComponent } from '../hotel/hotel-standard/hotel-standard.component';
 import { HotelDeluxeComponent } from '../hotel/hotel-deluxe/hotel-deluxe.component';
 
+// Facilities
+import { FacilitiesMainComponent } from '../facilities/facilities-main/facilities-main.component';
+
 const homeRoute: Routes = [
   	{ path: '', component: HomeComponent },
     { path: 'menu', 
@@ -48,6 +51,11 @@ const homeRoute: Routes = [
         { path: 'dormitory', component: HotelDormitoryComponent },
         { path: 'standard', component: HotelStandardComponent },
         { path: 'deluxe', component: HotelDeluxeComponent },
+      ] 
+    },
+    { path: 'facilities', 
+      children: [
+        { path: '', component: FacilitiesMainComponent }
       ] 
     }
 ];
@@ -75,6 +83,7 @@ const homeRoute: Routes = [
     HotelDormitoryComponent,
     HotelStandardComponent,
     HotelDeluxeComponent,
+    FacilitiesMainComponent,
     HeaderCarouselComponent,
     AboutRestaurantComponent,
     FoodsComponent,
