@@ -14,3 +14,14 @@ export const scrollAnimation = trigger('scrollAnimation', [
   transition('show => hide', animate('700ms ease-out')),
   transition('hide => show', animate('700ms ease-in'))
 ])
+
+
+export const slideIn = trigger('slideInOut', [
+  transition(':enter', [
+    style({transform: 'translateY(30%)'}),
+    animate('700ms ease-in', style({transform: 'translateY(0%)'}))
+    ]),
+  transition(':leave', [
+    animate('700ms ease-in', style({transform: 'translateY(30%)'}))
+  ])
+])

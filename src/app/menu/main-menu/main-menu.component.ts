@@ -1,12 +1,22 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { MenuDataService } from '../../api/menu/menu-data.service';
 import { Router, ActivatedRoute } from '@angular/router';
+import { trigger, state, style, transition, animate, group, query, stagger, keyframes } from '@angular/animations';
 import { Subscription } from 'rxjs';
 import { fadeIn } from '../../animations/fadeIn';
+import { slideIn } from '../../animations/slide-in';
 
 @Component({
   	selector: 'main-menu',
-  	animations: [fadeIn],
+  	animations: [fadeIn, trigger('slideInOut', [
+		transition(':enter', [
+		    style({transform: 'translateY(5%)'}),
+		    animate('700ms ease-in', style({transform: 'translateY(0%)'}))
+		    ]),
+		transition(':leave', [
+		    animate('700ms ease-in', style({transform: 'translateY(5%)'}))
+		])
+	])],
   	templateUrl: './main-menu.component.html',
   	styleUrls: ['./main-menu.component.scss']
 })
@@ -16,6 +26,7 @@ export class MainMenuComponent implements OnInit {
 	item_search : string = "All";
 	lat: number = 14.0616;
     lng: number = 121.5721;
+    visible: boolean = true;
 
 	constructor(private router:Router, 
 		private activatedRoute: ActivatedRoute,

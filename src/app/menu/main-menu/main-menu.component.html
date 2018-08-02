@@ -1,19 +1,21 @@
 <!-- Header carousel -->
 <menu-carousel></menu-carousel>
 
+<!--
 <button type="button" (click)="goToMenu()" class="btn btn-menu text-white btn-activity btn-header d-none d-sm-none d-md-block" >
   <span class="fa fa-chevron-circle-down btn-header-arrow"></span>
-</button>
+</button>-->
 
-<div class="container py-5" id="main-menu" [@fadeIn]>
+<div class="container-fluid" [@slideInOut]  [@fadeIn]>
+	<div class="container about-position card py-5 px-md-5" id="main-menu">
 	<div class="row">
 		<div class="col-md-12 col-lg-12 text-center">
-			<h1>Menu Items</h1>
+			<h1 class="d-none d-sm-none d-md-block">Menu Items</h1>
+			<h3 class="d-block d-sm-block d-md-none">Menu Items</h3>
 			<h4>These are the list of items we offer here at Kamayan sa Palaisdaan</h4>
 		</div>
 
 		<div class="col-md-4 py-5">	
-			<hr>
 			<img src="/assets/images/kamayanMenu.jpg" class="img-fluid">
 			<img src="/assets/images/food2.jpg" class="img-fluid mt-2">
 			<img src="/assets/images/southeast-asia-philippines-quezon-tayabas-kamayan-sa-palaisdaan-5.jpg" class="img-fluid mt-2">
@@ -74,6 +76,7 @@
 		
 	</div>
 	
+</div>
 </div>
 
 <div class="container-fluid" id="map-data">
