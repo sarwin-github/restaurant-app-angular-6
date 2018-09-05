@@ -1,8 +1,10 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
+import { allAnimation } from '../../animations/all-animation'
 
 @Component({
   selector: 'header-navigation',
+  animations: [allAnimation],
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })

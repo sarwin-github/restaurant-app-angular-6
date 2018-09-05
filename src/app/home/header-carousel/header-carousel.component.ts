@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { fadeIn } from '../../animations/fadeIn';
+import { allAnimation } from '../../animations/all-animation';
 
 @Component({
   selector: 'header-carousel',
-  animations: [fadeIn],
+  animations: [fadeIn, allAnimation],
   templateUrl: './header-carousel.component.html',
   styleUrls: ['./header-carousel.component.scss']
 })

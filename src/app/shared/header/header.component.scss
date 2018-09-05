@@ -95,23 +95,30 @@
 }
 
 .dropdown-item{
-  border-bottom: solid 1px #e2e2e2;
   padding: 10px !important;
   padding-left: 30px !important;
   padding-right: 30px !important;
+
+  &:active{
+    background: rgba(98, 132, 80, 0.85);
+    color: white !important;
+    text-transform: underline;
+  }
 }
 
-.dropdown-item:active{
-  background: #88bc71;
-  color: white !important;
-  text-transform: underline;
-}
 
 .dropdown-menu{
-  background: rgba(240, 240, 240, 0.95);
+  background: rgba(255, 255, 255, 1);
+  border-bottom-radius: 30px; 
   .dropdown-item{
     color: gray;
   }
+
+  -webkit-animation: show fadein 0.5s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 0.5s; /* Firefox < 16 */
+        -ms-animation: fadein 0.5s; /* Internet Explorer */
+         -o-animation: fadein 0.5s; /* Opera < 12.1 */
+            animation: fadein 0.5s;
 }
 
 

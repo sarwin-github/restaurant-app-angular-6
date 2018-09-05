@@ -12,89 +12,115 @@
 		<div class="collapse navbar-collapse" id="navbar-top">
 			<ul class="navbar-nav ml-auto">
 				<li class="nav-item dropdown pt-2" >
-					<a class="nav-link" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}" routerLink="/" id="HomeDropdown" role="button" data-toggle="dropdown">
+					<a class="nav-link" 
+						[routerLinkActive]="['active']" 
+						[routerLinkActiveOptions]="{exact:true}" 
+						routerLink="/" id="HomeDropdown" 
+						role="button" 
+						data-toggle="dropdown" 
+						[@animate]="{value:'*', params:{ scale:'0.5', delay:'400ms' }}">
 			          Home
 			        </a>
-			        <div class="dropdown-menu" aria-labelledby="HomeDropdown" [routerLink]="['/']" fragment="/" data-toggle="collapse" data-target=".navbar-collapse.show">
+			        <div class="dropdown-menu" aria-labelledby="HomeDropdown" [routerLink]="['/']" fragment="/" data-toggle="collapse" data-target=".navbar-collapse.show"  >
 			          	<a class="dropdown-item" href="#home">
-			          	<span class="fa fa-angle-right mr-3"></span>Home</a>
+			          	Home</a>
 
 			          	<a class="dropdown-item" href="#about-kamayan">
-			          	<span class="fa fa-angle-right mr-3"></span>About</a>
+			          	About</a>
 
 			          	<a class="dropdown-item" href="#food-variety">
-			          	<span class="fa fa-angle-right mr-3"></span>Variety of Foods</a>
+			          	Variety of Foods</a>
 
 			          	<a class="dropdown-item" href="#home-facilities">
-			          	<span class="fa fa-angle-right mr-3"></span>Facilities</a>
+			          	Facilities</a>
 
 			          	<a class="dropdown-item" href="#map-data">
-			          	<span class="fa fa-angle-right mr-3"></span>Map</a>
+			          	Map</a>
 			        </div>
 				</li>
 
 				<li class="nav-item dropdown pt-2" >
-					<a class="nav-link" [routerLinkActive]="['active']" routerLink="/menu" id="MenuPackage" role="button" data-toggle="dropdown" aria-expanded="false">
+					<a class="nav-link" 
+						[routerLinkActive]="['active']" 
+						routerLink="/menu" 
+						id="MenuPackage" 
+						role="button" 
+						data-toggle="dropdown" 
+						aria-expanded="false"
+						[@animate]="{value:'*', params:{ scale:'0.5', delay:'400ms' }}">
 			          Menu/Packages
 			        </a>
 			        <div class="dropdown-menu" aria-labelledby="MenuPackage" data-toggle="collapse" data-target=".navbar-collapse.show">
 			        	<a class="dropdown-item" routerLink="/menu" >
-			        	<span class="fa fa-angle-right mr-3"></span>Main Menu</a>
+			        	Main Menu</a>
 
 			          	<a class="dropdown-item" routerLink="/menu/all-occations" >
-			          	<span class="fa fa-angle-right mr-3"></span>For All Occation</a>
+			          	For All Occation</a>
 
 			          	<a class="dropdown-item" routerLink="/menu/per-order-basis">
-			          	<span class="fa fa-angle-right mr-3"></span>Per Order Basis</a>
+			          	Per Order Basis</a>
 
 			          	<a class="dropdown-item" routerLink="/menu/native-style-wedding">
-			          	<span class="fa fa-angle-right mr-3"></span>Native Style Wedding</a>
+			          	Native Style Wedding</a>
 
 			          	<a class="dropdown-item" routerLink="/menu/nature-crest-wedding" >
-			          	<span class="fa fa-angle-right mr-3"></span>Nature Crest Wedding</a>
+			          	Nature Crest Wedding</a>
 
 			          	<a class="dropdown-item" routerLink="/menu/kiddie-party" >
-			          	<span class="fa fa-angle-right mr-3"></span>Kiddie Party</a>
+			          	Kiddie Party</a>
 			        </div>
 				</li>
 
 				<li class="nav-item dropdown pt-2">
-					<a class="nav-link" [routerLinkActive]="['active']" routerLink="/hotels" id="HotelRooms" role="button" data-toggle="dropdown" aria-expanded="false">
+					<a class="nav-link" 
+						[routerLinkActive]="['active']" 
+						routerLink="/hotels" 
+						id="HotelRooms" 
+						role="button" 
+						data-toggle="dropdown" 
+						aria-expanded="false"
+						[@animate]="{value:'*', params:{ scale:'0.5', delay:'400ms' }}">
 			          Hotel/Rooms 
 			        </a>
 			        <div class="dropdown-menu" aria-labelledby="HotelRooms" data-toggle="collapse" data-target=".navbar-collapse.show">
 			        	<a class="dropdown-item" routerLink="/hotels" >
-			        	<span class="fa fa-angle-right mr-3"></span>All Room Rates</a>
+			        	All Room Rates</a>
 
 			          	<a class="dropdown-item" routerLink="/hotels/rest-house">
-			          	<span class="fa fa-angle-right mr-3"></span>Resthouse</a>
+			          	Resthouse</a>
 
 			          	<a class="dropdown-item" routerLink="/hotels/villa-rooms">
-			          	<span class="fa fa-angle-right mr-3"></span>Villa Rooms</a>
+			          	Villa Rooms</a>
 
 			          	<a class="dropdown-item" routerLink="/hotels/deluxe">
-			          	<span class="fa fa-angle-right mr-3"></span>Deluxe Rooms</a>
+			          	Deluxe Rooms</a>
 
 			          	<a class="dropdown-item" routerLink="/hotels/standard">
-			          	<span class="fa fa-angle-right mr-3"></span>Standard Rooms</a>
+			          	Standard Rooms</a>
 
 			          	<a class="dropdown-item" routerLink="/hotels/dormitory">
-			          	<span class="fa fa-angle-right mr-3"></span>Dormitory Rooms</a>   	
+			          	Dormitory Rooms</a>   	
 
 			          	<a class="dropdown-item" href="http://www.booking.com/Share-gBhWZT" target="_blank">
-			          	<span class="fa fa-angle-right mr-3"></span>Book Now</a>
+			          	Book Now</a>
 			        </div>
 				</li>
 
 				<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-					<a class="nav-link pt-3" [routerLinkActive]="['active']" routerLink="/facilities"> Facilities
-
+					<a class="nav-link pt-3" 
+						[routerLinkActive]="['active']" 
+						routerLink="/facilities"
+						[@animate]="{value:'*', params:{ scale:'0.5', delay:'400ms' }}"> 
+					Facilities
 					</a>
 				</li>
 
 				<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-					<a class="nav-link pt-3" [routerLinkActive]="['active']" routerLink="/restaurant"> Restaurant
-
+					<a class="nav-link pt-3" 
+						[routerLinkActive]="['active']" 
+						routerLink="/restaurant"
+						[@animate]="{value:'*', params:{ scale:'0.5', delay:'400ms' }}"> 
+					Restaurant
 					</a>
 				</li>
 			</ul>

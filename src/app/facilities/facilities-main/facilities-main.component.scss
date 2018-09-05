@@ -3,9 +3,11 @@
 }
 
 .about-position{
-  margin-top: -10% !important;
-  border-radius: 10px 10px 0  0;
-  border: none;
+  @media (max-width:641px)  { 
+    margin-top: -10% !important;
+    border-radius: 10px 10px 0  0;
+    border: none;
+  }
 
   &.card{
     border:none !important;
